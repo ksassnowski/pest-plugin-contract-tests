@@ -42,5 +42,8 @@
             "@test:types",
             "@test:unit"
         ]
+    },
+    "require-dev": {
+        "pestphp/pest-dev-tools": "^2.0.0"
     }
 }

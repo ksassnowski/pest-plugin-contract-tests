@@ -1,0 +1,50 @@
+{
+    "name": "sassnowski/pest-plugin-contract-tests",
+    "description": "A plugin to define an implement contract tests in Pest",
+    "keywords": [
+        "php",
+        "framework",
+        "pest",
+        "unit",
+        "test",
+        "testing",
+        "plugin"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "pestphp/pest": "^2.0.0",
+        "pestphp/pest-plugin": "^2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sassnowski\\PestContractTests\\": "src/"
+        },
+        "files": [
+            "src/Autoload.php"
+        ]
+    },
+    "require-dev": {
+        "pestphp/pest-dev-tools": "^2.0.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "lint": "pint",
+        "test:lint": "pint --test",
+        "test:types": "phpstan analyse --ansi",
+        "test:unit": "pest --colors=always",
+        "test": [
+            "@test:lint",
+            "@test:types",
+            "@test:unit"
+        ]
+    }
+}

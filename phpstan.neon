@@ -9,9 +9,9 @@ parameters:
         - src
 
     checkMissingIterableValueType: true
-    checkGenericClassInNonGenericObjectType: false
     reportUnmatchedIgnoredErrors: true
 
     ergebnis:
-        classesAllowedToBeExtended:
-            - InvalidArgumentException
+        noExtends:
+            classesAllowedToBeExtended:
+                - InvalidArgumentException

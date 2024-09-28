@@ -13,11 +13,11 @@
     ],
     "require": {
         "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
-        "pestphp/pest": "^1.21 || ^2.0"
+        "pestphp/pest": "^1.21 || ^2.0 || ^3.0"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.30",
-        "pestphp/pest-dev-tools": "^2.0.0"
+        "pestphp/pest-dev-tools": "^2.0.0 || ^3.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -31,8 +31,8 @@
     },
     "config": {
         "allow-plugins": {
-            "pestphp/pest-plugin": true,
-            "ergebnis/composer-normalize": true
+            "ergebnis/composer-normalize": true,
+            "pestphp/pest-plugin": true
         },
         "preferred-install": "dist",
         "sort-packages": true

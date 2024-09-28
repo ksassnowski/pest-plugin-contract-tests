@@ -11,8 +11,6 @@ it('throws an exception when trying to expand a contract test that does not exis
 })->throws(ContractTestDoesNotExistException::class);
 
 it('throws an exception when trying to add a contract test with an existing name', function (): void {
-    ContractTests::add('::name::', function (Closure $getInstance) {
-    });
-    ContractTests::add('::name::', function (Closure $getInstance) {
-    });
+    ContractTests::add('::name::', function (Closure $getInstance) {});
+    ContractTests::add('::name::', function (Closure $getInstance) {});
 })->throws(ContractTestAlreadyExistsException::class);

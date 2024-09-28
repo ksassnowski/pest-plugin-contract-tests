@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.4.0](https://github.com/ksassnowski/pest-plugin-contract-tests/compare/v0.3.0...v0.4.0) (2024-09-28)
+
+
+### Features
+
+* support pest 3 ([76652a4](https://github.com/ksassnowski/pest-plugin-contract-tests/commit/76652a406cf277e5aafb33874dfe7e6cfaa7a10e))
+
 ## [0.3.0](https://github.com/ksassnowski/pest-plugin-contract-tests/compare/v0.2.0...v0.3.0) (2024-03-26)
 
 
